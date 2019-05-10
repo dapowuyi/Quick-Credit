@@ -15,48 +15,7 @@ describe("user", () => {
         })
       });
 
-    describe('/POST/auth/signup', () => {
-        it('it should create user account', (done) => {
-          chai.request(app)
-            .post('/api/auth/v1/signup')
-           .send(users) 
-            .end((err, res) => { 
-              res.status.should.be.eql(201);
-              res.body.should.be.an('object');
-              res.body.should.have.property('lastname').eql('Adewuyi');
-              res.body.should.have.property('token');
-              res.body.should.have.property('id');
-              res.body.should.have.property('firstName');
-              res.body.should.have.property('lastName');
-              res.body.should.have.property('email');
-              
-                
-            done();
-            });
-        });
-    });
-
-    describe('/POST', () => {
-      it('it should make user login into account', (done) => {
-        chai.request(app)
-          .post('/api/auth/v1/login')
-         .send(users) 
-          .end((err, res) => { 
-            res.status.should.be.eql(201);
-            res.body.should.be.an('object');
-            res.body.should.have.property('lastname')
-            res.body.should.have.property('token');
-            res.body.should.have.property('id');
-            res.body.should.have.property('firstName');
-            res.body.should.have.property('lastName');
-            res.body.should.have.property('email');
-            
-          done();
-          });
-      });
-  });
-
-
+    
 describe("GET/loans", () => {
   it("should get all loan applications.", (done) => {
        chai.request(app)

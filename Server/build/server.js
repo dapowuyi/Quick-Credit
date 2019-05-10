@@ -32,7 +32,6 @@ app.get('/', function (req, res) {
   });
 });
 app.get('/api/v1/users', _controller["default"].listUsers);
-app.post('/api/auth/v1/signup', _controller["default"].createUser);
 app.get('/api/v1/loans', _controller["default"].getAllLoan);
 app.get('/api/v1/loans/id=2', _controller["default"].getLoanById);
 app.listen(port, function () {

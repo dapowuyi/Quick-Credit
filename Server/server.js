@@ -19,7 +19,6 @@ app.get('/', (req, res) => {
 })
 
 app.get('/api/v1/users', UserController.listUsers);
-app.post('/api/auth/v1/signup', UserController.createUser);
 app.get('/api/v1/loans', UserController.getAllLoan);
 app.get('/api/v1/loans/id=2', UserController.getLoanById);
 
