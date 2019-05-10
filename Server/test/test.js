@@ -36,6 +36,25 @@ describe("user", () => {
         });
     });
 
+    describe('/POST', () => {
+      it('it should make user login into account', (done) => {
+        chai.request(app)
+          .post('/api/auth/v1/login')
+         .send(users) 
+          .end((err, res) => { 
+            res.status.should.be.eql(201);
+            res.body.should.be.an('object');
+            res.body.should.have.property('lastname')
+            res.body.should.have.property('token');
+            res.body.should.have.property('id');
+            res.body.should.have.property('firstName');
+            res.body.should.have.property('lastName');
+            res.body.should.have.property('email');
+            
+          done();
+          });
+      });
+  });
 
 
 describe("GET/loans", () => {
@@ -56,9 +75,7 @@ describe("GET/loans", () => {
             res.body[0].should.have.property('amount'); 
             res.body[0].should.have.property('paymentInstallment'); 
             res.body[0].should.have.property('balance'); 
-            //res.body[0].balance.should.be.a('float');
             res.body[0].should.have.property('interest');
-            //res.body[0].interest.should.be.a('float');            
               
             done();
             });
@@ -76,19 +93,14 @@ describe("GET/loans", () => {
          res.body[0].should.have.property('user');
          res.body[0].should.have.property('status'); 
          res.body[0].should.have.property('createdOn');
-         //res.body[0].createdOn.should.be.a('DateTime');
          res.body[0].should.have.property('repaid'); 
          res.body[0].repaid.should.be.a('boolean');
          res.body[0].should.have.property('tenor'); 
          res.body[0].tenor.should.be.a('number');
          res.body[0].should.have.property('amount'); 
-        // res.body[0].amount.should.be.a('float');
          res.body[0].should.have.property('paymentInstallment'); 
-         //res.body[0].paymentInstallment.should.be.a('float');
          res.body[0].should.have.property('balance'); 
-         //res.body[0].balance.should.be.a('float');
          res.body[0].should.have.property('interest');
-         //res.body[0].interest.should.be.a('float');            
            
          done();
          });

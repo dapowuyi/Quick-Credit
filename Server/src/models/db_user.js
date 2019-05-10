@@ -18,20 +18,4 @@ const User =
 
     export default User;
 
-    /*class User {
-        constructor() {
-          this.user = [];
-        }
-        
-        create(data) {
-          const newUsers = {
-            id: data.id,
-            firstname: 'Dapo' ,
-            lastname: 'Adewuyi',
-            email: 'dapo.adewuyi@andela.com',
-            password: 'a90320m'
-          };
-          this.user.push(newUsers);
-          return newUsers;
-        }
-    }*/
+   
