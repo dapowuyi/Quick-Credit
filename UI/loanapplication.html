@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="Quick Credit is an online lending platform that provides short term soft loans to individuals. This
+	helps solve problems of financial inclusion as a way to alleviate poverty and empower low income earners.">
+	<meta name="keywords" content="loans, quick credit, online lending, short term loans, low income earners">
+	<meta name="author" content="Dapo Adewuyi">
+	<link rel="stylesheet" href="css/style.css">
+	<title>Quick Credit | Loan Application</title>
+</head>
+<body>
+	<header>
+	<div class="nav-container">
+		<div id="logo">
+			<h1>Quick<span class="highlight">Credit</span></h1>
+		</div>
+	<nav>
+    <div class="navbar">
+  		<a href="index.html">Home</a>
+  	<div class="submenu">
+    	<a class="submenu-drop" href="">Loans</a>
+    <div class="submenu-content">
+      	<a href="loanapplication.html">Apply for a Loan</a>
+      	<a href="loanrepayment.html">View Loan History</a>
+    </div>
+	</div> 
+  		<a href="#">About</a>
+  		<a href="#">Contact</a>
+  		<a href="signup.html"><button class="nav-btn" type="button">Sign Up</button></a>
+  		<a href="signin.html"><button class="nav-btn" type="button">Sign In</button></a>
+	</div>
+	</nav>
+	
+	</div>
+</header>
+<section class="loan-form-container">
+
+	<div class="div-apply">
+		<form>
+		<h2 class="page_title">Loan Application</h2>
+		<div class="info">		
+		</div>			
+		<div>
+			<label class="label-control">Address:</label>
+			<input type="text"  class="input input-control" name="address1" placeholder="address line 1">
+		</div>
+		<div>
+			<label class="label-control">Address Line 2:</label>
+			<input type="text"  class="input input-control" name="address2" placeholder="address line 2">
+		</div>
+		<div>
+			<label class="label-control">City:</label>
+			<input type="text"  class="input input-control" name="city" placeholder="city">
+		</div>
+		<div>
+			<label class="label-control">State:</label>
+			<input type="text"  class="input input-control" name="state" placeholder="state">
+		<div>
+			<label class="label-control">Country:</label>
+			<select class="dropdown-control">
+  			<option value="Select Your country">Select</option>
+  			<option value="Nigeria">Nigeria</option>
+  			<option value="Kenya">Kenya</option>
+  			<option value="Rwanda">Rwanda</option>
+  			<option value="Uganda">Uganda</option>
+  			<option value="USA">USA</option>
+  			</select>
+  		</div>
+		<div>
+			<label class="label-control">Loan Amount:</label>
+			<input type="number" class="input input-control" name="amount" placeholder="amount">
+		</div>
+		<div>
+			<label class="label-control">Purpose of Loan:</label>
+			<input type="text" class="input input-control" name="purpose" placeholder="loan purpose">
+		</div>
+		<div>
+			<label class="label-control">Loan Tenor:</label>
+			<input type="text" class="input input-control" name="tenor" placeholder="tenor">
+		</div>
+		<div>
+			<label class="label-control">Employment Status:</label>
+			<select class="dropdown-control">
+  				<option value="Employmnt status">Select</option>
+  				<option value="Employed">Employed</option>
+  				<option value="Unemployed">Unemployed</option>
+  				<option value="Entrepreneur">Entrepreneur</option>
+  				<option value="other">other</option>
+  			</select>	
+  		</div>
+  		<div>
+  			<label class="label-control">Employer Name:</label>
+  			<input type="text" class="input input-control" name="employer" placeholder="employer">
+  		</div>
+		<div>
+			<label class="label-control">Job title:</label>
+			<input type="text" class="input input-control" name="job title" placeholder="job">
+		</div>
+		<div>
+			<label class="label-control">Annual Income:</label>
+			<input type="text" class="input input-control" name="income" placeholder="income">
+		</div>
+		<div>
+			<p>Do you have any other loan running:</p> 	
+			<input type="radio" id="answer" name="no" value="No" checked>
+			<label for="no">No</label> 
+			<input type="radio" id="answer" name="yes" value="yes">
+			<label for="yes">Yes</label> 
+		</div>
+         <button type="submit" class="submit loan-submit">Apply</button>
+		</form> 
+	</div>
+</section>
+<footer>
+	<p>Copyright &copy; 2019. ADC Challenge Cycle 44.</p>
+</footer>
+</body>
+</html>
