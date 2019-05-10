@@ -1,4 +1,4 @@
-https://travis-ci.com/dapowuyi/Quick-Credit.svg?branch=develop
+[![Build Status](https://travis-ci.com/dapowuyi/Quick-Credit.svg?branch=develop)](https://travis-ci.com/dapowuyi/Quick-Credit)
 
 [![Coverage Status](https://coveralls.io/repos/github/dapowuyi/Quick-Credit/badge.svg?branch=develop)](https://coveralls.io/github/dapowuyi/Quick-Credit?branch=develop)
 
