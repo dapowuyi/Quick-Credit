@@ -1,9 +1,7 @@
 
 import Loans from '../models/db';
 import User from '../models/db_user';
-import repayment from '../models/db_repayment';
-import AuthMiddleWare from '../controllers/auth';
-import uuid from 'uuid';
+
 
 class UserController {
     
@@ -15,11 +13,10 @@ class UserController {
   static getAllLoan(req, res) {
     try
     {
-     
-    return res.status(200).send(Loans)({
-      message: 'Loans retreived successfully',
-      data : [req.body],
-      status: 200
+      return res.status(200).send(Loans)({
+      status: 200,
+      data : Loans,
+      //message: 'Loans retreived successfully',
     });
     }
         
@@ -32,23 +29,22 @@ class UserController {
   }
     
   static getLoanById(req, res)  {
-        const findLoan = Loans.find(loan => loan.id === parseInt(req.params.id, 10));   
+        const findLoan = Loans.find(loan => loan.id === parseInt(req.params.id));   
         if (findLoan) 
         {
            return res.status(200).json({
-              success: 'true',
-              message: 'Loan retrieved successfully',
-              data: req.params.id,
-              status:200
+              status: 200,
+              data: findLoan
            });
         }
-        return res.status(404).json({
-        success: 'false',
-        message: 'Loan does not exist'
+        else{
+          return res.status(404).json({
+            message: 'Loan does not exist'
         });
         }
+      }
 
-       static getRepaidAndStatus(req, res)  {
+  static getRepaidAndStatus(req, res)  {
           const {status, repaid} = req.query
           if(status === "approved" && repaid === true ) 
           {

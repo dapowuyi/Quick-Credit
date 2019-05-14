@@ -33,7 +33,7 @@ app.get('/', function (req, res) {
 });
 app.get('/api/v1/users', _controller["default"].listUsers);
 app.get('/api/v1/loans', _controller["default"].getAllLoan);
-app.get('/api/v1/loans/id', _controller["default"].getLoanById);
+app.get('/api/v1/loans/:id', _controller["default"].getLoanById);
 app.listen(port, function () {
   console.log("Server started on port ".concat(port));
 });

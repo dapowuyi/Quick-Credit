@@ -5,9 +5,9 @@
     const Loans =
     [
         {
-            id :  uuid.v4(),
+            id :  1,
             user : "dapo@apicentre.com" ,
-            createdOn : moment.now(),
+            createdOn : Date.now(),
             status : "approved",
             repaid : true,
             tenor : 6, 
@@ -18,9 +18,9 @@
         },
         
         {
-            id :  uuid.v4(),
+            id : 2,
             user : "dapo@apicentre.com" ,
-            createdOn : moment.now(),
+            createdOn : Date.now(),
             status : "approved",
             repaid : true,
             tenor : 6, 
@@ -31,9 +31,9 @@
         },
 
         {
-            id : uuid.v4(),
+            id : 3,
             user : "dapo@apicentre.com" ,
-            createdOn : moment.now(),
+            createdOn : Date.now(),
             status : "approved",
             repaid : true,
             tenor : 6, 

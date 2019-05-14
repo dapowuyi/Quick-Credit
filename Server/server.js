@@ -20,7 +20,7 @@ app.get('/', (req, res) => {
 
 app.get('/api/v1/users', UserController.listUsers);
 app.get('/api/v1/loans', UserController.getAllLoan);
-app.get('/api/v1/loans/id', UserController.getLoanById);
+app.get('/api/v1/loans/:id', UserController.getLoanById);
 
 
 
