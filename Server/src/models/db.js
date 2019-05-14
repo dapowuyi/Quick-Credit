@@ -1,10 +1,9 @@
 
-    import uuid from 'uuid';
 
     const Loans =
     [
         {
-            id :  uuid.v4(),
+            id :  1,
             user : "dapo@apicentre.com",
             createdOn : Date.now(),
             status : "repaid",
@@ -17,7 +16,7 @@
         },
         
         {
-            id :  uuid.v4(),
+            id :  2,
             user : "isabelleavery@quilch.com",
             createdOn : Date.now(),
             status : "pending",
@@ -30,7 +29,7 @@
         },
 
         {
-            id : uuid.v4(),
+            id : 3,
             user : "francisroberts@quilch.com" ,
             createdOn : Date.now(),
             status : "approved",
