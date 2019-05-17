@@ -8,113 +8,57 @@
 	<meta name="keywords" content="loans, quick credit, online lending, short term loans, low income earners">
 	<meta name="author" content="Dapo Adewuyi">
 	<link rel="stylesheet" href="css/style.css">
+	<link rel="shortcut icon" type="image/x-icon" href="img/QuickCreditlogo.ico" />
 	<title>Quick Credit | Loan Application</title>
 </head>
-<body>
-	<header>
-	<div class="nav-container">
-		<div id="logo">
-			<h1>Quick<span class="highlight">Credit</span></h1>
-		</div>
-	<nav>
-    <div class="navbar">
-  		<a href="index.html">Home</a>
-  	<div class="submenu">
-    	<a class="submenu-drop" href="">Loans</a>
-    <div class="submenu-content">
-      	<a href="loanapplication.html">Apply for a Loan</a>
-      	<a href="loanrepayment.html">View Loan History</a>
-    </div>
-	</div> 
-  		<a href="#">About</a>
-  		<a href="#">Contact</a>
-  		<a href="signup.html"><button class="nav-btn" type="button">Sign Up</button></a>
-  		<a href="signin.html"><button class="nav-btn" type="button">Sign In</button></a>
+<body class="loan-application">
+		
+	<div id="quiklogo">
+			<h1><a href="index.html">Quick<span class="highlighted">Credit</span></a></h1>
 	</div>
-	</nav>
-	
-	</div>
-</header>
-<section class="loan-form-container">
 
-	<div class="div-apply">
-		<form>
-		<h2 class="page_title">Loan Application</h2>
-		<div class="info">		
-		</div>			
+<section class="form-container">
+
+<div class="loan_centered_div">
+	<form>
+		<h2 class="page_title">APPLY FOR A LOAN</h2>	
+		<input type="number" class="input " name="amount" placeholder="Name (firstname and lastname)">
+		<input type="number" class="input " name="Loan amount" placeholder="Loan amount">	
+		<input type="text" class="input " name="Loan purpose" placeholder="Loan purpose">
+		<input type="text" class="input " name="Tenor" placeholder="Tenor">
+		<div>	
+		<select class="dropdown-control">
+			<option value="Employmnt status">Select Empoyment Status</option>
+			<option value="Employed">Employed</option>
+			<option value="Unemployed">Unemployed</option>
+			<option value="Entrepreneur">Entrepreneur</option>
+			<option value="other">other</option>
+		</select>	
+		<div></div>		
+		<input type="text" class="input " name="Employer" placeholder="Employer">
+		<input type="text" class="input " name="Job title" placeholder="Job description">
 		<div>
-			<label class="label-control">Address:</label>
-			<input type="text"  class="input input-control" name="address1" placeholder="address line 1">
-		</div>
-		<div>
-			<label class="label-control">Address Line 2:</label>
-			<input type="text"  class="input input-control" name="address2" placeholder="address line 2">
-		</div>
-		<div>
-			<label class="label-control">City:</label>
-			<input type="text"  class="input input-control" name="city" placeholder="city">
-		</div>
-		<div>
-			<label class="label-control">State:</label>
-			<input type="text"  class="input input-control" name="state" placeholder="state">
-		<div>
-			<label class="label-control">Country:</label>
 			<select class="dropdown-control">
-  			<option value="Select Your country">Select</option>
-  			<option value="Nigeria">Nigeria</option>
-  			<option value="Kenya">Kenya</option>
-  			<option value="Rwanda">Rwanda</option>
-  			<option value="Uganda">Uganda</option>
-  			<option value="USA">USA</option>
-  			</select>
-  		</div>
+					<option value="Annual Income">Select income range</option>
+					<option value="Employed">100,000 - 200,000</option>
+					<option value="Unemployed">201,000 - 350,000</option>
+					<option value="Entrepreneur">351,000 - 500,000</option>
+					<option value="other">500,000 and above</option>
+				</select>	
+<div>
 		<div>
-			<label class="label-control">Loan Amount:</label>
-			<input type="number" class="input input-control" name="amount" placeholder="amount">
-		</div>
-		<div>
-			<label class="label-control">Purpose of Loan:</label>
-			<input type="text" class="input input-control" name="purpose" placeholder="loan purpose">
-		</div>
-		<div>
-			<label class="label-control">Loan Tenor:</label>
-			<input type="text" class="input input-control" name="tenor" placeholder="tenor">
-		</div>
-		<div>
-			<label class="label-control">Employment Status:</label>
-			<select class="dropdown-control">
-  				<option value="Employmnt status">Select</option>
-  				<option value="Employed">Employed</option>
-  				<option value="Unemployed">Unemployed</option>
-  				<option value="Entrepreneur">Entrepreneur</option>
-  				<option value="other">other</option>
-  			</select>	
-  		</div>
-  		<div>
-  			<label class="label-control">Employer Name:</label>
-  			<input type="text" class="input input-control" name="employer" placeholder="employer">
-  		</div>
-		<div>
-			<label class="label-control">Job title:</label>
-			<input type="text" class="input input-control" name="job title" placeholder="job">
-		</div>
-		<div>
-			<label class="label-control">Annual Income:</label>
-			<input type="text" class="input input-control" name="income" placeholder="income">
-		</div>
-		<div>
-			<p>Do you have any other loan running:</p> 	
-			<input type="radio" id="answer" name="no" value="No" checked>
-			<label for="no">No</label> 
-			<input type="radio" id="answer" name="yes" value="yes">
-			<label for="yes">Yes</label> 
-		</div>
-         <button type="submit" class="submit loan-submit">Apply</button>
-		</form> 
-	</div>
-</section>
-<footer>
+				<p>Do you have any other loan running:</p> 	
+				<input type="radio" name="answer" value="No"> No
+				<input type="radio" name="answer" value="Yes"> Yes
+			</div>
+		
+		<button type="submit" class="submit">Apply</button>
+		
+	</form>
+</div>
+			
+<!-- <footer>
 	<p>Copyright &copy; 2019. ADC Challenge Cycle 44.</p>
-</footer>
+</footer> -->
 </body>
 </html>
