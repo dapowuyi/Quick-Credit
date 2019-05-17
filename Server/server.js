@@ -1,16 +1,11 @@
 import express from 'express';
-import bodyParser from 'body-parser';
 
-import UserController from './src/controllers/controller';
-import request from 'request';
+
+import LoanController from './src/controllers/loanController'
+import UserController from './src/controllers/userController'
 
 const app = express()
 const port = process.env.PORT || 3000;
-
-app.use(bodyParser.urlencoded({ extended: true }));
-app.use(bodyParser.json());
-app.use(bodyParser.text());                                    
-app.use(bodyParser.json({ type: 'application/json'}));  
 
 app.use(express.json())
 
@@ -19,8 +14,13 @@ app.get('/', (req, res) => {
 })
 
 app.get('/api/v1/users', UserController.listUsers);
-app.get('/api/v1/loans', UserController.getAllLoan);
-app.get('/api/v1/loans/id', UserController.getLoanById);
+app.get('/api/v1/loans', LoanController.getAllLoan);
+app.get('/api/v1/loans/:id', LoanController.getLoanById);
+app.post('/api/auth/v1/signup', UserController.createUser);
+app.post('/api/auth/v1/signin', UserController.login);
+
+
+
 
 
 

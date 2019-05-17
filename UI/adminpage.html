@@ -7,21 +7,28 @@
 	helps solve problems of financial inclusion as a way to alleviate poverty and empower low income earners.">
 	<meta name="keywords" content="loans, quick credit, online lending, short term loans, low income earners">
 	<meta name="author" content="Dapo Adewuyi">
-	<link rel="stylesheet" href="css/admin.css">
+  <link rel="stylesheet" href="css/admin.css">
+  <link rel="shortcut icon" type="image/x-icon" href="img/QuickCreditlogo.ico" />
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
 	<title>Quick Credit | Admin</title>
 </head>
 <body>
-	<div class="grid-container">
+
+  
+  
+  <div class="grid-container">
 		<div class="menu-icon">
     		<i class="fas fa-bars"></i>
   		</div>
 
   		<header class="header">
     <div class="header-search"><i class="fas fa-search"></i></div>
-    <div class="profile-picture">User Image
+    <!-- <div class="profile-picture">
+      <div class="profile-image">
+        <img src="img/admin.jpg" alt="User Image">
+      </div> 
     	<i class="fas fa-chevron-down"></i>
-    </div>
+    </div> -->
   </header>
 
   <aside class="sidenav">
@@ -29,83 +36,129 @@
   		<h1 class="sidenav-brand-link">Quick<span class="highlight">Credit</span></h1>
     </div>
     <div class="sidenav-profile">
-      <div class="sidenav-profile-picture">User Image</div>
-      <div class="sidenav-profile-title">User Name</div>
+      <div class="sidenav-profile-picture">
+        <img src="img/admin.jpg" alt="User Image">
+      </div>
+      <div class="sidenav-profile-title">Jonathan Biggs</div>
     </div>
     <div class="sidenav-close">
      <i class="fas fa-times sidenav-close-btn"></i>
     </div>
     <ul class="sidenav-menu">
 
-    <div class="sidenav-menu-icons" >
-      	<li class="sidenav-menu-item">
-      		<i class="far fa-user-circle sidenav-icons"></i> 
-      		&nbsp;&nbsp;Create Account  &nbsp;&nbsp;
-      		<i class="fas fa-angle-right sidenav-icons"></i>
-      	</li>
-     </div>
+   
    <div>
       <li class="sidenav-menu-item">
       <i class="fas fa-user-check">
-      &nbsp;&nbsp;</i>Verify User&nbsp;&nbsp;
-      <i class="fas fa-angle-right"></i></li>
+      &nbsp;&nbsp;</i>
+      <a  class="verifyUser" href="#">Users</a>
+      &nbsp;&nbsp;
+      
  	</div>
       <div>
       <li class="sidenav-menu-item">
       	<i class="far fa-eye"></i>
       	&nbsp;&nbsp;View Loans&nbsp;&nbsp;
-      <i class="fas fa-angle-right"></i></li>
       </div>
       <div>
       
       <li class="sidenav-menu-item"><i class="far fa-thumbs-up"></i>
       &nbsp;&nbsp;Approve Loans&nbsp;&nbsp;
-  	<i class="fas fa-angle-right"></i></li>
       
        </div>
       <div>
       
       <li class="sidenav-menu-item"><i class="fas fa-paper-plane"></i>
       	&nbsp;&nbsp;Post Loan&nbsp;&nbsp;
-      <i class="fas fa-angle-right"></i></li>
       
        </div>
-      <div>
       
-      <li class="sidenav-menu-item"><i class="fas fa-file-download"></i>
-      &nbsp;&nbsp;Downloads&nbsp;&nbsp;
-  <i class="fas fa-angle-right"></i></li>
-      
-     </div>
     </ul>
   </aside>
 
   <main class="main">
+
+      <div id="adminModal" class="modal">
+
+          <!-- Modal content -->
+          <div class="modal-content">
+            <span class="closeBtn">&times;</span>
+            <div>
+              <a><button class="user-btn">All Users</button></a>
+              <a></a><button class="user-btn">Verified Users</button></a>
+              <a></a><button class="user-btn">Unverified Users</button></a>
+            </div>
+            
+            <div class="users-details">
+                <table class="loan-info-table">
+                <tr>
+                  <th>#</th>
+                  <th>ID</th>
+                  <th>First Name</th>
+                  <th>Last Name</th> 
+                  <th>Email</th>
+                  <th>Address</th>
+                  <th>Phone No</th>
+                  
+                </tr>
+                <tr>
+                  <td>1</td>
+                  <td>001</td>
+                  <td>Calton</td> 
+                  <td>Banks</td>
+                  <td>banks@yahoo.co.uk</td>
+                  <td>23, luver lane, Uk</td> 
+                  <td>0844890202</td>
+                  
+                  </tr>
+                <tr>
+                  <td>2</td>
+                  <td>202</td>
+                  <td>Lara</td> 
+                  <td>Daramola</td>
+                  <td>lara@yahoo.co.uk</td>
+                  <td>12, orlando heights, Ohio</td> 
+                  <td>0844890202</td>
+                </tr>
+                <tr>
+                  <td>3</td>
+                  <td>450</td>
+                  <td>Chantelle</td> 
+                  <td>Victor</td>
+                  <td>chantelle@yahoo.co.uk</td>
+                  <td>50, Admiralty Way, Lekki</td> 
+                  <td>0844890202</td>
+                </tr>
+              </table>
+                </div>
+          </div>
+        </div>
+
     <div class="main-header">
-      <div class="main-header-heading">Hello User</div>
+      <div class="main-header-heading">Hello Jonathan</div>
       <div class="main-header-updates">Recent Items</div>
     </div>
 
+   
+
     <div class="main-summary">
       <div class="Summarycard">
-        <div class="Summarycard__icon">Summary</div>
+        <div class="Summarycard__icon">Loans Summary</div>
         
       </div>
       <div class="Summarycard">
-        <div class="Summarycard__icon">Summary</div>
+        <div class="Summarycard__icon">Loan Applications</div>
         
       </div>
       <div class="Summarycard">
-        <div class="Summarycard__icon">Summary</div>
+        <div class="Summarycard__icon">Loan repayments</div>
        
       </div>
       
     </div>
 
     <div class="main-cards">
-      <div class="card">Card</div>
-      <div class="card">Card</div>
-      <div class="card">Card</div>
+      <div class="card">Loan Applications for April 2019</div>
     </div>
    
   </main>
@@ -115,6 +168,7 @@
 		</footer>
 	</div>
  
+  <script src="js/adminDashboard.js"></script>
 </body>
 </html>
 
