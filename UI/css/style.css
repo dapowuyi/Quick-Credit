@@ -9,6 +9,107 @@ body
     background-color: #FFFFFF;
 }
 
+.signup{
+	background: linear-gradient(
+    to bottom,
+    rgba(0,0,0, 0),
+    rgba(0, 0, 0, 50)
+  ),url(../img/signup1.jpg);
+	background-repeat: no-repeat;
+	/* background-position: center ;
+	background-size: cover;
+	background-attachment: fixed;
+	background-color: #464646; */
+	width: 100vh ;
+	height: 100vh;
+	
+}
+
+/* .signup #logo
+{
+	position: absolute;
+	top: 10%;
+	left: 10%;
+} */
+
+.signin{
+	background: linear-gradient(
+    to bottom,
+    rgba(0,0,0, 0),
+    rgba(0, 0, 0, 50)
+  ),url(../img/signup1.jpg);
+	width: 100% ;
+	height: 100vh;
+}
+
+.loan-application{
+	background: linear-gradient(
+    to bottom,
+    rgba(0,0,0, 0),
+    rgba(0, 0, 0, 50)
+  ),url(../img/loanpage.jpg);
+	background-repeat: no-repeat;
+	width: 100% ;
+	height: 100vh;
+}
+
+.forgotPassword 
+{
+	background: linear-gradient(
+    to bottom,
+    rgba(0,0,0, 0),
+    rgba(0, 0, 0, 50)
+  ),url(../img/signup1.jpg);
+	background-repeat: no-repeat;
+	width: 100% ;
+	height: 100vh;
+}
+
+.resetPassword
+{
+	background: linear-gradient(
+    to bottom,
+    rgba(0,0,0, 0),
+    rgba(0, 0, 0, 50)
+  ),url(../img/signup1.jpg);
+	background-repeat: no-repeat;
+	width: 100% ;
+	height: 100vh;
+}
+
+.centered_div
+  {
+  	margin:  10% auto;
+  	background-color: #FFFFFF;
+    border-radius: 10px; 
+    width: 450px;
+    padding: 1px;
+		text-align: center;
+ } 
+
+ .signUp_div
+ {
+		margin:  10% auto;
+  	background-color: #FFFFFF;
+    border-radius: 10px; 
+    width: 450px;
+		padding: 1px;
+		margin-left: 580px;
+		text-align: center;
+ }
+ 
+ .loan_centered_div
+  {
+  	margin:  0 auto;
+  	background-color: #FFFFFF;
+    border-radius: 10px; 
+    width: 450px;
+    padding: 1px;
+		text-align: center;
+		height: 600px;
+
+ } 
+
 /*Global */
 form {
     display: block;
@@ -17,21 +118,19 @@ form {
 
 .form-container 
 {
-     margin-top:40px; 
-     margin-bottom: 80px;  
+    margin-top:80px; 
+		margin-bottom: 80px;  
 }
 
 .container
 {
+	display:grid;
+	grid-template-columns: repeat(4, 1fr);
 	width: 80%;
 	margin-bottom: 20px;
 	overflow: hidden;
-}
-
-ul
-{
-	margin: 0;
-	padding: 0;
+	margin-left: 200px;  
+	grid-gap: 200px;
 }
 
 a
@@ -42,30 +141,32 @@ a
 
 a:hover
 {
-	color: #FFFFFF;
+	color: #363377;
 	text-decoration: underline;
 	cursor: pointer;
 }
 
 .info
 {
-	color: #FFFFFF;
+	color: #363377;
 }
 
-.higlight
+.highlight
 {
-	color: #64B058
+	color: #64B058;
 }
 
 /* Header **/
 
 header
 {
-	background: #363377;
 	color: #FFFFFF;
 	padding-top: 30px;
-	min-height: 70px;
-	border-bottom: 7px solid #827FB2;
+	height: 100vh; 
+	background-image: url("../img/lights.jpg");
+ 	background-repeat: no-repeat;
+	background-position: _er;
+	
 }
 
 header a
@@ -74,27 +175,58 @@ header a
 	color: #FFFFFF;
 }
 
-header a:hover
+header nav a:hover
 {
 	color: #64B058;
 	text-decoration: underline;
 	cursor: pointer;
 }
 
-
-
-header #logo
+#logo
 {
 	float: left;
-	margin-top: 5px;
-	padding-top: 0px;
+	margin-top: 20px;
+	color: #FFFFFF;
 }
 
-header #logo h1
+#quiklogo
+{
+	float: left;
+	margin-top: -30px;
+	color: #FFFFFF;
+	margin-left: 100px;
+}
+
+#quicklogo
+{
+	float: left;
+	margin-top: -90px;
+	color: #FFFFFF;
+	margin-left: 100px;
+}
+
+#quiklogo a:hover
+{
+	text-decoration: none;
+	color: #FFFFFF;
+}
+
+#quicklogo a:hover
+{
+	text-decoration: none;
+	color: #FFFFFF;
+}
+
+#logo h1
 {
 	margin: 0;
 	margin-left:136px;
 	font-family: 'Trebuchet MS';
+}
+
+header #logo a:hover
+{
+	text-decoration: none; 
 }
 
 header nav
@@ -105,32 +237,61 @@ header nav
 	overflow: hidden;
 }
 
-header .nav-btn
+.getStarted-btn
 {
-	background-color: #64B058;
+	background-color: #FFFFFF;
 	border-radius: 4px;
     color: #363377;
-    height: 40px;
-    width:  86px;
-    margin-top: 0px;
-    margin-bottom: 0px;
+    height: 50px;
+    width:  180px;
+    margin-top: -7px;
     font-family: 'Trebuchet MS';
     border: 0px solid;
-    font-size: 18px;
-    cursor: pointer;
+		font-size: 20px;
+		text-transform: uppercase;
+		cursor: pointer;
+		font-weight: bold;
  }
+
 
 .nav-button a:hover
  {
  	color: #64B058;
  }
 
- header .highlight, header .active
+ .login-btn
+ {
+	 	background-color: #FFFFFF;
+	 	border-radius: 4px;
+  	color: #363377;
+    font-family: 'Trebuchet MS';
+    border: 0px solid;
+    font-size: 18px;
+		cursor: pointer;
+		height: 40px;
+		width:  86px;
+		margin-top: -7px;
+		text-transform: uppercase;
+		font-weight: bold;
+ }
+
+ 
+.highlight header .active
  {
  	color: #64B058;
  	font-weight: bold;
  }
 
+ .highlighted 
+ {
+ 	color: #64B058;
+ 	font-weight: bold;
+ }
+
+ .highlighted:hover
+ {
+	color: #FFFFFF;
+ }
  
 /* Links inside the navbar */
 .navbar a 
@@ -144,16 +305,6 @@ header .nav-btn
   text-decoration: none;
   margin-top: 5px;
 }
-
-/*header li
-{ 
-	float: left;
-	display: inline;
-	padding: 0px 20px 0 20px;
-	color: #FFFFFF;
-	font-size: 18px;
-	font-family: 'Trebuchet MS';
-}*/
 
 /* The dropdown container */
 .submenu 
@@ -170,8 +321,8 @@ header .nav-btn
   color: white;
   padding: 14px 16px;
   background-color: inherit;
-  font-family: inherit; /* Important for vertical align on mobile phones */
-  margin: 0; /* Important for vertical align on mobile phones */
+  font-family: inherit; 
+  margin: 0; 
 }
 
 /* submenu content (hidden by default) */
@@ -203,15 +354,10 @@ header .nav-btn
 /* landing */
 #landing-page
 {
-	background-image: url("../img/landing.jpg");
- 	background-repeat: no-repeat;
- 	background-position: center; 
- 	width:100%;
- 	max-height: 400px; 
-	text-align: center;
+ 	width:100%; 
+	text-align: center; 
 	color: #64B058;
 	margin-bottom: 0;
-	padding: 20px;
 	overflow: hidden;
 }
 
@@ -220,49 +366,47 @@ header .nav-btn
 	margin-top: 100px;
 	font-size: 55px;
 	margin-bottom: 10px;
-	text-shadow: 4px 4px 6px #000000;
-}
 
+}
 
 #landing-page p
 {
 	font-size: 25px;
-	text-shadow: 10px 10px 20px #000000;
-	color: #FFFFFF
+	color: #FFFFFF;
+	margin-left: 320px;  
+	width: 60%;
 }
 
 /*testimonials */
 #testimonials 
 {	
-	background-color: #363377 ;
-	color: #FFFFFF;
+	color: rgb(4, 6, 92);
 	padding-top: 70px;
 	padding-bottom: 60px;
-
+	height: 100vh; 
 }
 
 
 #testimonials h2
 {
 	text-align: center;
-	background-color: #363377 ;
-	color: #64B058;
+	text-transform: uppercase;
+	color: rgb(4, 6, 92);
 	font-size: 2.5em;
-	margin-top: 5px;
+	margin-top: -15px;
 }
 
 #testimonials h3
 {
-	
-	color: #64B058;
+	color: rgb(4, 6, 92);
 	font-size: 1.5em;
 }
 
 .customer
 {
 	float: left;
-	width: 30%;
-	padding: 10px;
+	width: 100%;
+	padding: 5px;
 	text-align: center;	
 }
 
@@ -271,18 +415,83 @@ header .nav-btn
 	margin-top: 20px;	
 }
 
+.partner-container
+{
+	float: left;
+	width: 80%;
+	margin-left: 500px;
+}
+
+.partner-logo
+{
+	float: left;
+ 	width: 20%; 
+	padding: 10px;
+	height: 20px;
+}
+
 footer
 {
-	padding: 3px;
-	margin-top: 3px;
 	color: #FFFFFF;
 	background-color: #363377;
+	opacity: 0.8;
+  padding-left: 110px;
+	display: grid;
+	grid-template-columns: auto auto auto;
+	grid-column-gap: 100px;
+	grid-row-gap: 50px;
+}
+
+footer h2
+{
+	color: #64B058;
+}
+
+.footer-Menu
+{ 
+	width: 30%;
+	float: left;
+	margin-top: 40px;
+}
+
+.footer-Menu h2
+{
+	color: #64B058;
+}
+
+.footer ul
+{
+	list-style-type: none;
+}
+
+.contact
+{ 
+	width: 70%;
+	float: left;
+	padding: 10px;
+	text-align: left;
+	margin-top: 40px;
+}
+
+.contact h2
+{
+	color: #64B058;
+	text-transform: uppercase;
+}
+
+.social-media ul
+{
+	list-style-type: none;
+}
+
+#whatsapp
+{
+	color: #64B058;
+}
+
+.copyright
+{
 	text-align: center;
-	position: fixed;
-  	left: 0;
-  	bottom: 0;
-  	width: 100%;
-  	border-top: 7px solid #827FB2;
 }
 
 .page_title 
@@ -306,8 +515,8 @@ footer
 .submit 
 {
     background-color: #64B058;
-	border-radius: 4px;
-    color: #363377;
+		border-radius: 4px;
+    color: #FFFFFF;
     height: 40px;
     width:  290px;
     margin-top: 0px;
@@ -332,19 +541,10 @@ footer
   	background-image: url(../img/landing.jpg) no repeat;
   }
 
-.centered_div
-  {
-  	margin:  0 auto;
-  	background-color: #363377;
-    border-radius: 10px;
-    max-width: 450px;
-    padding: 1px;
-   	text-align: center;
- }
 
  .centered_div p
  {
- 	color: #FFFFFF;
+ 	color: #363377;
  }
 
 /*Loan Application*/
@@ -384,8 +584,8 @@ footer
 
 .dropdown-control
 {
-	width: 36.5% !important;
-	margin-left: 40px;
+	width: 292px ;
+	margin-left: 0px;
 	height: 40px;
   	padding: 5px;
   	/*margin: 3px;*/
@@ -417,10 +617,10 @@ footer
 
 .personal-info
 {
-	background-color: #ffccff; 
+	background-color: #718EA4; 
 	width: 18%;
 	height: 120px;
-	color:	#9012B3;
+	color:	#FFFFFF;
 	float: left;
 	padding: 10px;
 	text-align: center;
@@ -435,10 +635,10 @@ footer
 
 .loan-amount
 {
-	background-color: #E6D3C9; 
+	background-color: #496D89; 
 	width: 18%;
 	height: 120px;
-	color:	#851081;
+	color:	#FFFFFF;
 	float: left;
 	padding: 10px;
 	text-align: center;	
@@ -453,10 +653,10 @@ footer
 
 .loan-balance
 {
-	background-color: #ffccff; 
+	background-color: #718EA4; 
 	width: 18%;
 	height: 120px;
-	color:	#9012B3;
+	color:	#FFFFFF;
 	float: left;
 	padding: 10px;
 }
@@ -477,10 +677,10 @@ footer
 
 .loan-repayment
 {
-	background-color: #E6D3C9; 
+	background-color: #496D89; 
 	width: 18%;
 	height: 120px;
-	color:	#851081;
+	color:	#FFFFFF;
 	text-align: center;
 	float: left;
 	padding: 10px;
@@ -495,10 +695,10 @@ footer
 
 .rate
 {
-	background-color: #ffccff; 
+	background-color: #718EA4; 
 	width: 18%;
 	height: 120px;
-	color:	#9012B3;
+	color:	#FFFFFF;
 	text-align: center;
 	float: left;
 	padding: 10px;
@@ -514,8 +714,9 @@ footer
 /*tables*/
 .loan-info-table
 {	margin-top: 50PX;
-	margin-left: 80px;
+	margin-left: 89px;
 	border-collapse: collapse;
+	width: 87%;
 }
 
 .loan-info-table, td, th 
@@ -525,7 +726,7 @@ footer
 
 .loan-info-table a 
 {
-  color: #9012B3;
+  color: #363377;
   font-weight: bold;
   text-decoration: underline;
 }
@@ -538,14 +739,14 @@ footer
 
 tr:nth-child(even) 
 {
-	background-color: #ffccff;
+	background-color: #718EA4;
 }
 
 th 
 {
   text-align: left;
-  color: #64B058;
-  background-color: #9012B3;
+  color: #FFFFFF;
+  background-color: #496D89;
 }
 
 td 
@@ -561,111 +762,241 @@ td
 /*Media Queries*/
 
 
-@media only screen and (max-width : 767px), (min-device-width: 768px) and (max-device-width: 1024px)
+@media only screen and (max-width : 767px)
+/* , (min-device-width: 768px) and (max-device-width: 1024px) */
 {	
-	header
-	{
-		min-height: 200px;
+	body{
+		width:100vh;
+		overflow-x: hidden;
+
 	}
-	.customer, 
-	{
+	header a
+{
+	text-decoration: none;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    padding-right: 15px;
+}
+
+#logo
+{
+	float: left;
+	margin-top: 5px;
+	padding-top: 0px;
+}
+
+#logo h1
+{
+	margin: 0;
+	margin-left:70px;
+	font-family: 'Trebuchet MS';
+}
+
+.highlight
+{
+	color: #64B058
+}
+
+header #logo a:hover
+{
+	text-decoration: none; 
+}
+
+header nav
+{
+    float: none;
+    display: inline-block;
+    margin-top: 5px;
+	padding-top:0;
+    overflow: hidden;
+    margin-left: 30px;
+}
+
+#menu-highlight
+{
+    color:#64B058;
+}
+.container{
+	display:grid; 
+	grid-template-columns: repeat(1, 1fr);
+}
+
+.submenu-drop
+ {
+  font-size: 15px; 
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit; 
+  margin: 0; 
+}
+
+/* submenu content (hidden by default) */
+ .submenu-content 
+{
+  display: none;
+  position: absolute;
+  background-color: #363377;
+  min-width: 100px;
+ }
+
+.getStarted-btn
+{
+	background-color: #FFFFFF;
+	border-radius: 4px;
+    color: #363377;
+    height: 40px;
+    width:  120px;
+    margin-top: -7px;
+    font-family: 'Trebuchet MS';
+    border: 0px solid;
+	font-size: 16px;
+	text-transform: uppercase;
+	cursor: pointer;
+	font-weight: bold;
+ }
+
+ .login-btn
+ {
+	background-color: #FFFFFF;
+	border-radius: 4px;
+  	color: #363377;
+    font-family: 'Trebuchet MS';
+    border: 0px solid;
+    font-size: 14px;
+	cursor: pointer;
+	height: 30px;
+	width:  70px;
+	margin-top: -7px;
+	text-transform: uppercase;
+	font-weight: bold;
+ }
+
+#landing-page
+{
+ 	width:100%; 
+	text-align: center; 
+    color: #64B058;
+    margin-top: 30px;
+	margin-bottom: 0;
+	overflow: hidden;
+}
+
+#landing-page h1
+{
+	margin-top: 10px;
+	font-size: 30px;
+	margin-bottom: 10px;
+}
+
+#landing-page p
+{
+	font-size: 15px;
+	color: #FFFFFF;
+	margin-left: 60px;   
+    width: 65%;
+}
+#testimonials 
+{	
+	color: rgb(4, 6, 92);
+	padding-top: 70px;
+		padding-bottom: 60px;
 		float: none;
-		text-align: center;
-		width: 100%;
-	}
+}
 
-	header #logo h1
-	{
-		margin-left: 50px;
-		float: none;
-		width: 100%;
-		text-align: center;
-	}
+#testimonials h2
+{
+	text-align: center;
+	text-transform: uppercase;
+	color: rgb(4, 6, 92);
+	font-size: 1.5em;
+    margin-top: -20px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
 
-	#landing-page h1
-	{
-		margin-top: 0px;
-		padding-top: 0px;
-		font-size: 35px;
-	}
+#testimonials h3
+{
+	color: rgb(4, 6, 92);
+    font-size: 1.5em;
+    margin-left: 50px;
+}
 
-	#landing-page p
-	{
-		margin-top: 0px;
-		padding-top: 0px;
-		font-size: 20px;
-		margin-bottom: 20px;
-	}
+#testimonials p
+{
+    margin-left: 50px;
+    font-size: 15px;
+	margin-left: 60px;   
+    width: 70%;
+}
 
-	.navbar
-	{
-		float: none
-		width: 100%;
-		text-align: center;
-	}
+#testimonials img
+{
+    margin-left: 50px;
+}
 
-	nav a
-	{
-		text-align: center;
-		cursor: pointer;
-	}
-
-	#testimonials h2
-	{
-		font-size: 25px;
-		margin-top: 0px;
-		padding-top: 0;
-		
-	}
-
-	.centered_div
-	{
-		float: none;
-		text-align: center;
-		width: 90%;
-	}
-
-	.input,  
-	{
-		float: none;
-		text-align: center;
-		width: 83%;
-	}
-
-	.submit
-	{
-		float: none;
-		text-align: center;
-		width: 83%;
-	}
-
-	.show-loan-info
-	{
-		float: none;
-		text-align: center;
-		width: 100%;
-	}
-
-	.loan-details
-	{
-		overflow-x:auto;
-	}
-
-	table, thead, tbody, th, td, tr 
-	{ 
-		display: block; 
-	}
-
-	thead tr 
-	{ 
-		position: absolute;
-		top: -9999px;
-		left: -9999px;
-	}
-
-
+.customer
+{
+    float: none;
+    text-align: center;
+    width: 50vh;
+    left:0;
 }
 
 
+.partner-container
+{
+	float: left; 
+	 width: 80%;
+	margin-left: 15px;
+}
 
+footer
+{
+	color: #FFFFFF;
+	background-color: #363377;
+	opacity: 0.8;
+	display: none;
+}
 
+.footer-Menu
+{ 
+	width: 30%;
+	float: none;
+    margin-top: 40px;
+    margin-left: 30px;
+    margin-bottom: 20px;
+}
+
+.contact
+{ 
+	width: 70%;
+	float: none;
+	padding: 10px;
+	text-align: center;
+    margin-left: 40px;
+}
+
+.social-media
+{
+    margin-left:20px;
+    list-style-type: none;
+}
+
+.social-media ul a
+{
+    list-style-type: none;
+    color: #64B058;
+    text-decoration: none;
+}
+
+.FAQs
+{
+    margin-top: 20px;
+    margin-left:28px;
+    text-align: center;
+    width:85%;
+}
+}  
