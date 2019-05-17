@@ -11,6 +11,7 @@ var _loanController = _interopRequireDefault(require("./src/controllers/loanCont
 
 var _userController = _interopRequireDefault(require("./src/controllers/userController"));
 
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
 
 var app = (0, _express["default"])();
@@ -28,6 +29,7 @@ app.post('/api/auth/v1/signup', _userController["default"].createUser);
 app.post('/api/auth/v1/signin', _userController["default"].login);
 app.get('/api/v1/loans', _loanController["default"].getRepaidAndStatus);
 app.get('/api/v1/loans/:id', _loanController["default"].getLoanById);
+
 app.listen(port, function () {
   console.log("Server started on port ".concat(port));
 });

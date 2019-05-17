@@ -1,8 +1,8 @@
 import express from 'express';
 
-
 import LoanController from './src/controllers/loanController'
 import UserController from './src/controllers/userController'
+
 
 const app = express()
 const port = process.env.PORT || 3000;
@@ -18,7 +18,6 @@ app.get('/api/v1/loans', LoanController.getAllLoan);
 app.get('/api/v1/loans/:id', LoanController.getLoanById);
 app.post('/api/auth/v1/signup', UserController.createUser);
 app.post('/api/auth/v1/signin', UserController.login);
-
 
 
 
